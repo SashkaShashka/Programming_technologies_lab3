@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "client0": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum":["не принят ответ"]
+        },
+        "address": {
+          "enum": ["127.0.0.1"]
+        },
+        "socket": {
+          "type": "number",
+          "minimum":10000,
+          "maximum":99999
+        }
+      },
+      "required": [
+        "status",
+        "address",
+        "socket"
+      ]
+    },
+    "client1": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum":["камень","ножницы","бумага"]
+        },
+        "address": {
+          "enum": ["127.0.0.1"]
+        },
+        "socket": {
+          "type": "number",
+          "minimum":10000,
+          "maximum":99999
+        }
+      },
+      "required": [
+        "status",
+        "socket",
+        "address"
+      ]
+    }
+  },
+  "required": [
+    "client0",
+    "client1"
+  ]
+}

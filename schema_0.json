@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "client0": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum":["disconnected"]
+        }
+      },
+      "required": [
+        "status"
+      ],
+    "additionalProperties": false
+    },
+    "client1": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum":["disconnected"]
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "client0",
+    "client1"
+  ]
+}
